@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { createRoot } from 'react-dom/client'; // Import createRoot from react-dom/client
+//import App from './App';
+import App from './App2'; // Ensure the correct path to your App component
 
-ReactDOM.render(
+// Create a root and render the App component
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
